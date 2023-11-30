@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const punten = prompt("Geef het aantal punten in met 2 cijfers.");
+        if (punten == null) {
+            document.write(`<p>U heeft geannulleerd!</p>`);
+        }
+        else if (punten == 0) {
+            document.write(`<p>U heeft niets ingegeven!</p>`);
+        }
+        else if (isNaN(punten)) {
+            document.write(`<p>Dit is geen nummer!</p>`);
+        }
+        else if (punten.length != 2) {
+            document.write(`<p>Geef de punten in met 2 cijfers!</p>`);
+        }
+        else {
+            if (punten >= 95) {
+                document.write(`<p>De graad is: A+</p>`);
+            }
+            else if (punten >= 90) {
+                document.write(`<p>De graag is: A</p>`);
+            }
+            else if (punten >= 80) {
+                document.write(`<p>De graag is: B</p>`);
+            }
+            else if (punten >= 70) {
+                document.write(`<p>De graag is: C</p>`);
+            }
+            else if (punten >= 60) {
+                document.write(`<p>De graag is: D</p>`);
+            }
+            else if (punten >= 50) {
+                document.write(`<p>De graag is: E</p>`);
+            }
+            else {
+                document.write(`<p>De graag is: F</p>`);
+            }
+        }
+    </script>
+</body>
+</html>
